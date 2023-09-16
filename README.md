@@ -61,7 +61,6 @@ Escogí NodeJs y MongoDb porque comparten el mismo lenguaje de programación y s
 | http://localhost:8000/chat/:userId/:chatId | GET  | get user chat by id                       |
 | http://localhost:8000/chat/:userId/      | POST  | create a chat                              |
 | http://localhost:8000/chat/:userId/:chatId |       |                                           |
-| http://localhost:8000/chat/conversation/:userId/:chatId | PUT | clean a conversation                |
 | http://localhost:8000/chat/:userId/:chatId | DELETE| delete a chat by id                      |
 
 
