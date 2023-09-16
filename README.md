@@ -42,22 +42,25 @@ Escogí NodeJs y MongoDb porque comparten el mismo lenguaje de programación y s
    "createdAt": 1631295667000
    }]}
 
-   Tabla con los endpoints de user:
-   URL TYPE DESCRIPTION
-   http://localhost:8000/users/:id GET get user data by id
-   http://localhost:8000/users/register POST create of an user
-   http://localhost:8000/users/email POST change with the email (forgot the password)
-   http://localhost:8000/users/:id PUT update an user by id
-   http://localhost:8000/users/:id DELETE delete an user by id
-   http://localhost:8000/login POST create a token for the auth
+   | Tabla con los endpoints de user:                 |
+| URL                                      | TYPE  | DESCRIPTION                               |
+|------------------------------------------|-------|-------------------------------------------|
+| http://localhost:8000/users/:id          | GET   | get user data by id                       |
+| http://localhost:8000/users/register     | POST  | create of an user                         |
+| http://localhost:8000/users/email        | POST  | change with the email (forgot the password)|
+| http://localhost:8000/users/:id          | PUT   | update an user by id                      |
+| http://localhost:8000/users/:id          | DELETE| delete an user by id                      |
+| http://localhost:8000/login              | POST  | create a token for the auth               |
 
-   Tabla con los endpoint relacionado con los chats:
-   URL TYPE DESCRIPTION
-   http://localhost:8000/chat/:userId/:chatId GET get user chat by id
-   http://localhost:8000/chat/:userId/ POST create a chat
-   http://localhost:8000/chat/:userId/:chatId
-   http://localhost:8000/chat/conversation/:userId/:chatId PUT clean a conversation
-   http://localhost:8000/chat/:userId/:chatId DELETE delete a chat by id
+| Tabla con los endpoint relacionados con los chats:|
+| URL                                      | TYPE  | DESCRIPTION                               |
+|------------------------------------------|-------|-------------------------------------------|
+| http://localhost:8000/chat/:userId/:chatId | GET  | get user chat by id                       |
+| http://localhost:8000/chat/:userId/      | POST  | create a chat                              |
+| http://localhost:8000/chat/:userId/:chatId |       |                                           |
+| http://localhost:8000/chat/conversation/:userId/:chatId | PUT | clean a conversation                |
+| http://localhost:8000/chat/:userId/:chatId | DELETE| delete a chat by id                      |
+
 
 En tu archivo .env, añade este campo para el login:
 JWT_SECRET="Introduce_aquí_tu_clave_secreta"
