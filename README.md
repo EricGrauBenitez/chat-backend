@@ -4,20 +4,23 @@ GET START
 
 Requirements
 Make sure to have a text and code editing tool like Visual Studio Code installed and set up NPM.
-
+------------
 Install
 Node.js
-
+------------
 To download Node.js from the BASH terminal:
 sudo npm install -g n
 sudo n latest
-
+-------
 Check the Node.js version with:
 node -v
-
+-----
 Clone the repository
+git clone https://github.com/EricGrauBenitez/chat-backend.git
+---------
 In your directory:
 npm install
+-------------------
 BACK-END EXPLANATION
 I chose Node.js and MongoDB because they share the same programming language and are very versatile. Moreover, the database system was not very complex and can be easily managed with these technologies.
 
