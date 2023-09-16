@@ -1,27 +1,39 @@
+# Chat Application with ChatGPT's AI
+
 Hello World! I'm Eric Grau, and this is my final project for the Full Stack Web Development course at IT Codespace school. I've decided to create a chat application with ChatGPT's AI, as its functionality has exploded during the course, and the world is changing thanks to it. Because of this, it's essential to know how to apply it.
 
-GET START
+## Getting Started
 
-Requirements
-Make sure to have a text and code editing tool like Visual Studio Code installed and set up NPM.
-------------
-Install
-Node.js
-------------
-To download Node.js from the BASH terminal:
-sudo npm install -g n
-sudo n latest
--------
-Check the Node.js version with:
+### Requirements
+
+Before you begin, make sure to have the following tools and software installed:
+
+- Visual Studio Code or any text and code editing tool
+- Node.js and NPM
+
+### Install Node.js
+
+To download Node.js, follow these steps:
+
+1. Open your terminal or BASH terminal.
+
+2. Run the following commands to install and set up Node.js:
+
+   ```bash
+   sudo npm install -g n
+   sudo n latest
+
+
+Verify the Node.js installation by checking the version:
 node -v
------
+
 Clone the repository
 git clone https://github.com/EricGrauBenitez/chat-backend.git
----------
+
 In your directory:
 npm install
--------------------
-BACK-END EXPLANATION
+
+## BACK-END EXPLANATION
 I chose Node.js and MongoDB because they share the same programming language and are very versatile. Moreover, the database system was not very complex and can be easily managed with these technologies.
 
 User
