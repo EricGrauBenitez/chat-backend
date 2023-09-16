@@ -1,51 +1,47 @@
-Hola Mundo! Soy Eric Grau y este es mi proyecto final del curso Full Stack web development de la escuela IT Codespace. He decidido crear un chat con la IA de ChatGPT, ya que durante el curso explotó su funcionalidad y el mundo está cambiando gracias a él. Debido a esto, hay que saber entender cómo aplicarla .
+Hello World! I'm Eric Grau, and this is my final project for the Full Stack Web Development course at IT Codespace school. I've decided to create a chat application with ChatGPT's AI, as its functionality has exploded during the course, and the world is changing thanks to it. Because of this, it's essential to know how to apply it.
 
 GET START
 
-1. Requirements
-   Asegúrate de tener una herramienta de edición de texto y código como Visual Studio Code e instalar el NPM y que funcione.
+Requirements
+Make sure to have a text and code editing tool like Visual Studio Code installed and set up NPM.
 
-2. Install
-   Node.js
+Install
+Node.js
 
-- Para poder descargar Node.js desde la terminal BASH:
-  sudo npm install -g n
-  sudo n latest
+To download Node.js from the BASH terminal:
+sudo npm install -g n
+sudo n latest
 
-- Revisa la versión de node con:
-  node -v
+Check the Node.js version with:
+node -v
 
-3. Clona el repositorio
+Clone the repository
+In your directory:
+npm install
+BACK-END EXPLANATION
+I chose Node.js and MongoDB because they share the same programming language and are very versatile. Moreover, the database system was not very complex and can be easily managed with these technologies.
 
----
-
-- En tu directorio:
-  npm install
-
-EXPLICACIÓN DEL BACK-END
-Escogí NodeJs y MongoDb porque comparten el mismo lenguaje de programación y son muy versátiles. Además, el sistema de la base de datos no era muy compleja y se puede gestionar fácilmente con estas tecnologías.
-
-1. User
-   Ejemplo de user:
-   {
-  "name": "Nombre del Usuario",
-  "lastName": "Apellido del Usuario",
-  "city": "Ciudad (opcional)",
-  "country": "País (opcional)",
-  "email": "correo@ejemplo.com",
-  "password": "contraseña_segura",
-  "chats": [
-    {
-      "_id": "ID_DEL_CHAT_1",
-      "conversation": [],
-      "title": "Título del Chat 1",
-      "createdAt": 1631295667000
-    }
-  ]
+User
+User example:
+{
+"name": "User's Name",
+"lastName": "User's Last Name",
+"city": "City (optional)",
+"country": "Country (optional)",
+"email": "email@example.com",
+"password": "secure_password",
+"chats": [
+{
+"_id": "ID_OF_CHAT_1",
+"conversation": [],
+"title": "Chat Title 1",
+"createdAt": 1631295667000
+}
+]
 }
 
 
-| Tabla con los endpoints de user:                 |
+| Table with user endpoints: |
 | URL                                      | TYPE  | DESCRIPTION                               |
 |------------------------------------------|-------|-------------------------------------------|
 | http://localhost:8000/users/:id          | GET   | get user data by id                       |
@@ -55,7 +51,7 @@ Escogí NodeJs y MongoDb porque comparten el mismo lenguaje de programación y s
 | http://localhost:8000/users/:id          | DELETE| delete an user by id                      |
 | http://localhost:8000/login              | POST  | create a token for the auth               |
 
-| Tabla con los endpoint relacionados con los chats:|
+| Table with chat-related endpoints: |
 | URL                                      | TYPE  | DESCRIPTION                               |
 |------------------------------------------|-------|-------------------------------------------|
 | http://localhost:8000/chat/:userId/:chatId | GET  | get user chat by id                       |
@@ -64,5 +60,5 @@ Escogí NodeJs y MongoDb porque comparten el mismo lenguaje de programación y s
 | http://localhost:8000/chat/:userId/:chatId | DELETE| delete a chat by id                      |
 
 
-En tu archivo .env, añade este campo para el login:
-JWT_SECRET="Introduce_aquí_tu_clave_secreta"
+In your .env file, add this field for login:
+JWT_SECRET="Insert_your_secret_key_here"
