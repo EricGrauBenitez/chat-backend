@@ -42,7 +42,7 @@ Escogí NodeJs y MongoDb porque comparten el mismo lenguaje de programación y s
    "createdAt": 1631295667000
    }]}
 
-   | Tabla con los endpoints de user:                 |
+   | Tabla con los endpoints de user:|
 | URL                                      | TYPE  | DESCRIPTION                               |
 |------------------------------------------|-------|-------------------------------------------|
 | http://localhost:8000/users/:id          | GET   | get user data by id                       |
