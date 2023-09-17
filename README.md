@@ -41,7 +41,6 @@ To download MongoDB, follow these steps:
   
  3. Run MongoDB:
 
-   ```bash
    sudo systemctl start mongod
 
 
