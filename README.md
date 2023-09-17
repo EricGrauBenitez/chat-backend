@@ -40,6 +40,7 @@ To download MongoDB, follow these steps:
   sudo apt-get install -y mongodb-org
   
  3. Run MongoDB:
+
    ```bash
    sudo systemctl start mongod
 
