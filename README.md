@@ -27,6 +27,23 @@ To download Node.js, follow these steps:
 Verify the Node.js installation by checking the version:
 node -v
 
+### Install MongoDB
+
+To download MongoDB, follow these steps:
+
+1. Open your terminal or BASH terminal.
+
+2. Run the following commands to install and set up Node.js:
+
+   ```bash
+   echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+  sudo apt-get install -y mongodb-org
+  
+ 3. Run MongoDB:
+   ```bash
+   sudo systemctl start mongod
+
+
 Clone the repository
 git clone https://github.com/EricGrauBenitez/chat-backend.git
 
@@ -74,6 +91,7 @@ User example:
 | http://localhost:8000/chat/conversation/:userId/:chatId | PUT | clean a conversation                |
 | http://localhost:8000/chat/:userId/:chatId | DELETE| delete a chat by id                      |
 
+MongoDB route: mongodb://localhost:27017
 
 In your .env file, add this field for login:
 JWT_SECRET="Insert_your_secret_key_here"
